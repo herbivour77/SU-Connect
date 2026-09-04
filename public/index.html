@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<title>SU Connect</title>
+<link rel="stylesheet" href="/css/style.css" />
+</head>
+<body>
+  <div class="app-shell">
+    <nav class="sidebar">
+      <div class="brand">SU Connect<small>Scripture Union Singapore</small></div>
+      <div class="nav-item" data-view="dashboard">Dashboard</div>
+      <div class="nav-item" data-view="contacts">Contacts</div>
+      <div class="nav-item" data-view="donations">Donations</div>
+      <div class="nav-item" data-view="volunteers">Volunteers</div>
+
+      <div class="nav-section-label" id="adminSectionLabel" style="display:none;">Admin Panel</div>
+      <div class="nav-item" data-view="users" id="navUsers" style="display:none;">User Management</div>
+      <div class="nav-item" data-view="audit" id="navAudit" style="display:none;">Admin History</div>
+
+      <div class="nav-item" data-view="logout" style="margin-top: 30px; opacity: 0.8;">Log Out</div>
+    </nav>
+    <main class="main" id="main">
+      <div class="main-header">
+        <h2 id="viewTitle">Loading…</h2>
+        <div class="who" id="whoAmI"></div>
+      </div>
+      <div id="content"></div>
+    </main>
+  </div>
+
+  <script src="/js/api.js"></script>
+  <script src="/js/app.js"></script>
+</body>
+</html>
